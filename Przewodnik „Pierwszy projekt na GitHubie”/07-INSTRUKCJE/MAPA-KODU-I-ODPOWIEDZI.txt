@@ -163,7 +163,7 @@ JSON nie dopuszcza komentarzy, dlatego `04-PRZYKLADOWE-DANE/*.json` oraz `packag
 Komentarz dodano do każdej zwykłej niepustej linii kodu i do znaczników HTML oraz reguł CSS.
 Linie wewnątrz wielowierszowych literałów są danymi, a nie osobnymi instrukcjami. Dodanie tam // zmieniłoby treść README albo kod scenariusza testu.
 Dlatego taki fragment ma komentarz przed nim, a poniżej znajduje się opis jego linii. Puste wiersze pozostają odstępami.
-Dokumenty w `08-DOKUMENTACJA/` nie są kodem aplikacji — zachowano je bez zmian, a ich stare raporty nie są nową weryfikacją.
+Dokumentacja projektu to DOKUMENTACJA.docx i DOKUMENTACJA.pdf w głównym folderze; pełny opis uruchomienia to README.md.
 
 ### Wielowierszowy szablon README w makeReadme
 
@@ -201,4 +201,4 @@ Nie ucz się każdego komentarza na pamięć. Potrafisz wyjaśnić program dopie
 
 Ścieżki w tym przewodniku podano od głównego folderu projektu. Funkcje zachowują nazwy, ale pliki mają polskie opisy. Przykładowe dane MojaGra nadal zawierają index.html i README.md — to nazwy plików sprawdzanego projektu, a nie ścieżki uruchamiania tej aplikacji. Nie zmieniamy tego wymaganego przykładu.
 
-Dokumenty w 08-DOKUMENTACJA/materialy-sprzed-zmiany-nazw są archiwalne i mogą podawać stare nazwy plików. Mapa starych i nowych nazw znajduje się w 07-INSTRUKCJE/STARE-I-NOWE-NAZWY.txt.
+Dokumentacja Word/PDF oraz README w głównym folderze opisują aktualne nazwy plików. Mapa starych i nowych nazw znajduje się w 07-INSTRUKCJE/STARE-I-NOWE-NAZWY.txt.

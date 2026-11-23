@@ -1,0 +1,8 @@
+DOKUMENTACJA PROJEKTU jest w głównym folderze:
+DOKUMENTACJA.docx — edytowalny dokument Word
+DOKUMENTACJA.pdf — raport 10 stron
+README.md i README.txt — pełny opis uruchomienia i projektu
+
+Ten folder zawiera PREZENTACJA-AKTUALNA.pptx i PDF oraz źródła wymagań.
+Prezentacja zachowuje nazwy core.js/app.js z wcześniejszego układu; odpowiedniki opisuje 07-INSTRUKCJE/STARE-I-NOWE-NAZWY.txt.
+Repozytorium: https://github.com/xzrrrrrrr/mini-projekt-m2

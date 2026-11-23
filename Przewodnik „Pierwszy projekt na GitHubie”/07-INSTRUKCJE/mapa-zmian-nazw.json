@@ -19,8 +19,10 @@
   "CZYTAJ-KOD.txt": "07-INSTRUKCJE/MAPA-KODU-I-ODPOWIEDZI.txt",
   "SEKCJE-KODU.json": "07-INSTRUKCJE/funkcje-i-numery-linii.json",
   "START-KOMENTARZE.txt": "07-INSTRUKCJE/jak-czytac-komentarze.txt",
-  "START-TUTAJ.txt": "07-INSTRUKCJE/instrukcja-oryginalnej-wersji.txt",
-  "README.md": "07-INSTRUKCJE/opis-oryginalnego-projektu.md",
+  "START-TUTAJ.txt": "START-TUTAJ.txt",
+  "README.md": "README.md",
   "package.json": "package.json",
-  ".gitignore": ".gitignore"
+  ".gitignore": ".gitignore",
+  "docs/dokumentacja.pdf": "DOKUMENTACJA.pdf",
+  "docs/prezentacja.pptx": "08-DOKUMENTACJA/PREZENTACJA-AKTUALNA.pptx"
 }
