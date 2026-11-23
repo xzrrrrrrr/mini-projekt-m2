@@ -1,0 +1,10 @@
+[
+  "style.css",
+  "index.html",
+  "scripts/benchmark.cjs",
+  "scripts/server.cjs",
+  "src/core.js",
+  "src/app.js",
+  "tests/core.test.cjs",
+  "tests/app.test.cjs"
+]

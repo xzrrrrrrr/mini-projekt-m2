@@ -1,0 +1,4 @@
+Otwórz MAPA-KODU-I-ODPOWIEDZI.txt z tego folderu.
+Kod aplikacji znajduje się w sąsiednim folderze 02-KOD-APLIKACJI.
+Uruchomienie: ../01-APLIKACJA/OTWORZ-APLIKACJE.html.
+W edytorze włącz zawijanie długich linii, aby widzieć komentarze.

@@ -1,0 +1,10 @@
+{
+  "src/core.js": "dc56cd07f134575f206bc7f5f98c258673f372e7aae8f69025c09f41acf185d5",
+  "src/app.js": "d9367ef36a5643b941cda6fc8b399b6522a57c1dc08ed5546c453288ef0f9085",
+  "tests/core.test.cjs": "7406ac4996034d6f799dd4db30545d6b967ce2d2df3f77ab1d33193cf1bd6c5f",
+  "tests/app.test.cjs": "67b4dfb9f6a3cbfecd55515a2bed3e705200f8abdf4ac82ceb81e62e8e15fcdf",
+  "scripts/benchmark.cjs": "af4f5e44b51f51b7af8e9a0aeaf00d9dce8ecce53fdd4e4356b737c439a5c8f8",
+  "scripts/server.cjs": "4a6349bb87a631307f59dc9085e8e8a12849c42e4e28cfe9a14ec3fee7498921",
+  "index.html": "3c7075117de5578d58d46d47422fea30e6dd9399fcf34a42222df07de6b04ddc",
+  "style.css": "02b2999fc210bd46cb29f9c1614d18a8a307cde744b293910518324a9e3e5217"
+}

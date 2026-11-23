@@ -1,0 +1,9 @@
+AST identyczne: src/core.js
+AST identyczne: src/app.js
+AST identyczne: tests/core.test.cjs
+AST identyczne: tests/app.test.cjs
+AST identyczne: scripts/benchmark.cjs
+AST identyczne: scripts/server.cjs
+CSS: identyczne reguły i wartości
+HTML: identyczne elementy, atrybuty i treść po pominięciu komentarzy i białych znaków
+Oryginalne 8 plików: niezmienione SHA256
