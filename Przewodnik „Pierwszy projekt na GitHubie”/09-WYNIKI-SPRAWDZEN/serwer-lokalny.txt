@@ -1,1 +1,0 @@
-Serwer lokalny: uruchomienie, strona główna, nowy HTML, oba skrypty, CSS i logo: OK.
