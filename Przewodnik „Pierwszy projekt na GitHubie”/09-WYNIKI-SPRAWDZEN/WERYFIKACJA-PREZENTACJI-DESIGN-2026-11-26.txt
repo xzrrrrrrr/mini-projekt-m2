@@ -1,0 +1,7 @@
+Weryfikacja materiałów 26.11.2026
+10 slajdów PPTX, 10 stron PDF, 10 notatek prelegenta.
+Sprawdzono wizualnie wszystkie 10 slajdów.
+Grafika oryginalnego wzorca UwB identyczna bajtowo z szablonem.
+Link do repozytorium aktywny na slajdzie 10.
+Sprawozdanie: 10 stron PDF, DOCX i PDF niezmienione.
+Kod, dane, testy, README niezmienione; testów aplikacji nie powtarzano przy tej zmianie wyglądu.

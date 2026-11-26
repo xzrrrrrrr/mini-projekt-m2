@@ -1,0 +1,4 @@
+Aktualna dokumentacja: DOKUMENTACJA.docx oraz DOKUMENTACJA.pdf w głównym folderze projektu.
+Układ według wzoru dokumentacji kolegi, ale cała treść dotyczy ASD1-M2-12 i autora Deividas Dirma.
+PREZENTACJA-AKTUALNA.pptx i PDF w tym folderze: szablon UwB, dodatkowe schematy, 10 slajdów, notatki i GitHub.
+Pliki w zrodla to materiały źródłowe, nie bieżące sprawozdanie.

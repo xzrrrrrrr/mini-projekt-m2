@@ -1,0 +1,29 @@
+SLAJD 1
+Przedstawiam program, który pomaga przygotować podstawowe informacje o projekcie na GitHubie. Sprawdza sześć rzeczy i pokazuje, co uzupełnić. Działa lokalnie i nie łączy się z GitHubem. Teraz pokażę prosty przykład.
+
+SLAJD 2
+W przykładzie MojaGra są spełnione trzy z sześciu warunków, czyli 50 procent. Dodaję instrukcję uruchomienia i mam cztery z sześciu, czyli 66,7 procent. To pokazuje, jak jedna poprawka zmienia wynik.
+
+SLAJD 3
+Program sprawdza nazwę, opis, plik README oraz informacje o celu, uruchomieniu i testach. Braki dzieli na błędy i ostrzeżenia. Błędy pokazuje jako pierwsze, żeby użytkownik wiedział, od czego zacząć.
+
+SLAJD 4
+Dane zapisuję w pliku JSON. Zestaw zawiera projekty, a każdy projekt ma własne ID, nazwę, opis i listę plików oraz sekcje README. ID pozwala rozpoznać projekt. Wynikiem sprawdzenia jest lista braków i liczba spełnionych warunków.
+
+SLAJD 5
+Używam dwóch własnych algorytmów. Wyszukiwanie liniowe sprawdza pliki po kolei i zatrzymuje się na README.md. Sortowanie przez wstawianie bierze kolejny problem i wstawia go na właściwe miejsce. Błąd jest przed ostrzeżeniem; przy tej samej ważności decyduje numer reguły. Dlatego R2, R5, R6 zmienia się na R5, R2, R6.
+
+SLAJD 6
+Program jest napisany w HTML, CSS i JavaScript. HTML i CSS odpowiadają za wygląd, 02-formularz-przyciski-i-wyniki.js za kliknięcia, a 01-reguly-algorytmy-i-dane.js za sprawdzanie i algorytmy. Dane zapisuję przez eksport JSON i wczytuję przez import. Po odświeżeniu dane nie zostają, więc trzeba je wcześniej wyeksportować.
+
+SLAJD 7
+Na zrzucie z 20 listopada widać aplikację. Najpierw wczytuję przykład, potem sprawdzam wynik, a na końcu poprawiam wskazane pole. Po zmianie danych klikam sprawdzenie jeszcze raz.
+
+SLAJD 8
+W zapisanym sprawdzeniu z 24 listopada przeszło 31 z 31 testów. Tabela pokazuje liczbę porównań, a nie czas działania. Dla 1000 uporządkowanych elementów jest 999 porównań, a dla odwróconych 499 500. Im gorsza kolejność, tym więcej pracy wykonuje sortowanie.
+
+SLAJD 9
+Korzystałem z Codex w OpenClaw. Potwierdzony model obecnej sesji to GPT-6.1-sol, z poziomem rozumowania medium. AI pomagało przygotować kod i algorytmy, interfejs aplikacji, testy oraz poprawki. Pomagało również w dokumentacji i slajdach. Mój wkład w projekt polegał na określaniu wymagań, podejmowaniu decyzji dotyczących wyglądu interfejsu oraz zgłaszaniu uwag i kierowaniu poprawkami. Nie deklaruję samodzielnego napisania kodu ani wykonania testów. Program sprawdza kompletność opisu, nie działanie kodu. Źródła: specyfikacja ASD1-M2-12, MDN, GitHub Docs, Node.js.
+
+SLAJD 10
+Pokażę przykład MojaGra i zmianę wyniku z 50 na 66,7 procent. Następnie wczytam błędny JSON i pokażę, że bieżące dane zostają. Na końcu otworzę algorytm w 01-reguly-algorytmy-i-dane.js i uruchomię npm test. Adres repozytorium to https://github.com/xzrrrrrrr/mini-projekt-m2. Oznaczenie commitu należy podać przy oddaniu; prowadzący musi mieć dostęp.

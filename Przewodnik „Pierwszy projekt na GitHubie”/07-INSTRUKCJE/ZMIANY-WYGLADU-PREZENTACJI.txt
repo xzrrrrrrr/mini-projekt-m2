@@ -1,0 +1,8 @@
+PREZENTACJA — WERSJA WIZUALNA 26.11.2026
+
+Otwórz 08-DOKUMENTACJA/PREZENTACJA-AKTUALNA.pptx.
+W tej samej lokalizacji jest PDF do podglądu.
+
+Zachowano oryginalny wzorzec UwB, logo na wszystkich slajdach, 10 slajdów, edytowalne elementy, notatki oraz link do repozytorium.
+Dodano karty, kroki, paski postępu i wizualne przesunięcie reguły R5 przy sortowaniu.
+Aplikacja, dane, testy, README i formalne sprawozdanie pozostają bez zmian.

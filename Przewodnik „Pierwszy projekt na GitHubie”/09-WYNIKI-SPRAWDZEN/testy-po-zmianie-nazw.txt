@@ -1,0 +1,43 @@
+
+> pierwszy-projekt-github@1.0.0 test
+> node --test 05-TESTY/*.test.cjs
+
+✔ Wczytaj przykład jest poza fieldset i przywraca 3/6 z pustego zestawu (11.842394ms)
+✔ Import nazwy wieloliniowej nie potwierdza ani nie zmienia zestawu lub formularza (3.121814ms)
+✔ Za duży eksport nie pobiera pliku ani nie zatwierdza zmian formularza (131.241798ms)
+✔ Mały eksport nadal pobiera plik i zapisuje prawidłowy formularz (1.115386ms)
+✔ Przykład kontrolny: 3/6, 50%, R5 R2 R6, 2 porównania i 2 kroki (1.236559ms)
+✔ Po poprawieniu uruchomienia: 4/6 i 66,7% (0.178009ms)
+✔ Same białe znaki: pusta nazwa i pozostałe sekcje (1.048425ms)
+✔ Brak README nie pomija R4–R6; kolejność błędów i ostrzeżeń (0.142424ms)
+✔ Pełny manifest: 100% i brak problemów (0.218385ms)
+✔ Ponowne sprawdzenie nie dubluje komunikatów (0.114422ms)
+✔ Pusta lista projektów i puste algorytmy (0.06517ms)
+✔ Eksport/import odtwarza dane i wynik (0.229803ms)
+✔ Błędny import nie mutuje istniejącego zestawu (0.753035ms)
+✔ Odrzuca JSON uszkodzony, złą wersję i zły typ (0.142215ms)
+✔ Odrzuca brak ID, duplikat i niepoprawne znaki (0.128047ms)
+✔ ID pozostaje niezmienne podczas kontroli; obiekt nie jest mutowany (0.107422ms)
+✔ Odrzuca złe typy tekstu i flagi demonstracji (0.151008ms)
+✔ Ścieżki względne; dopuszcza plik w podkatalogu, ale nie jako R3 (0.3516ms)
+✔ Limit: 1000 projektów dozwolone, 1001 odrzucone (1.941675ms)
+✔ Limit plików: 1000 dozwolone, 1001 odrzucone (0.404186ms)
+✔ Wyszukiwanie: początek, koniec, brak i pierwsze dopasowanie (0.049919ms)
+✔ Sortowanie: uporządkowane, odwrócone i remisy względem wzorca (0.094254ms)
+✔ Pomiary 10/100/1000: znane liczniki i zgodność wzorca (5.751814ms)
+✔ Generator README zawiera wszystkie sekcje, braki są jawne (0.081212ms)
+✔ Raport rozdziela zakres kontroli, manifest i wynik (0.076503ms)
+✔ Tekst HTML pozostaje danymi, nie jest usuwany ani wykonywany przez rdzeń (0.10363ms)
+✔ Nazwy z LF, CR i CRLF są odrzucane bez zmiany danych (0.215052ms)
+✔ Limit importu w bajtach: dokładnie 20 MiB dozwolone, bajt więcej odrzucony (43.070789ms)
+✔ Eksport sprawdza bajty UTF-8, a nie liczbę znaków; nie mutuje danych (128.082565ms)
+✔ Eksport uwzględnia znaki ucieczki w gotowym JSON-ie (29.852288ms)
+✔ Pobrany JSON odtwarza pusty, kontrolny i większy zestaw z Unicode (6.238754ms)
+ℹ tests 31
+ℹ suites 0
+ℹ pass 31
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 258.187892

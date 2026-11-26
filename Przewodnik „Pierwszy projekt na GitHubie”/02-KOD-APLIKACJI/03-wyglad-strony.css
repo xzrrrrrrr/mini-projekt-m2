@@ -1,0 +1,519 @@
+/* KATEGORIA: WYGLĄD — CSS nie oblicza wyniku ani nie sortuje danych. */
+/* Paleta inspirowana stroną Filii UwB w Wilnie. */
+:root { /* Reguła dla :root: ustawienia obowiązują elementy pasujące do tego selektora. */
+  color-scheme: light; /* jasny albo ciemny wygląd kontrolek: light. */
+  --accent: #532272; /* Główny fiolet przycisków, nagłówków i postępu; użycie: var(--accent). */
+  --accent-hover: #3f1858; /* Ciemniejszy fiolet po najechaniu na przycisk; użycie: var(--accent-hover). */
+  --on-accent: #ffffff; /* Jasny tekst na fioletowym tle; użycie: var(--on-accent). */
+  --bg: #f8f9fa; /* Tło całej strony; użycie: var(--bg). */
+  --surface: #f8f9fa; /* Tło zewnętrznego kontenera aplikacji; użycie: var(--surface). */
+  --card: #ffffff; /* Tło kart i kontrolek formularza; użycie: var(--card). */
+  --panel: #ededed; /* Tło liczników i pomocniczych paneli; użycie: var(--panel). */
+  --line: #767676; /* Kolor obramowań i separatorów; użycie: var(--line). */
+  --text: #212529; /* Podstawowy kolor tekstu; użycie: var(--text). */
+  --muted: #565d64; /* Kolor tekstu pomocniczego; użycie: var(--muted). */
+  --error: #842029; /* Tekst błędu; użycie: var(--error). */
+  --error-bg: #f8d7da; /* Tło komunikatu błędu; użycie: var(--error-bg). */
+  --warning: #664d03; /* Tekst ostrzeżenia; użycie: var(--warning). */
+  --warning-bg: #fff3cd; /* Tło ostrzeżenia; użycie: var(--warning-bg). */
+  --success: #146c43; /* Kolor spełnionych reguł; użycie: var(--success). */
+  font: 16px/1.5 system-ui, -apple-system, "Segoe UI", sans-serif; /* Czcionka systemowa, 16 px i wysokość wiersza 1,5. */
+} /* Koniec tej reguły stylu lub warunku responsywnego. */
+* { /* Reguła dla *: ustawienia obowiązują elementy pasujące do tego selektora. */
+  box-sizing: border-box; /* czy wymiary uwzględniają padding i obramowanie: border-box. */
+} /* Koniec tej reguły stylu lub warunku responsywnego. */
+body { /* Reguła dla body: ustawienia obowiązują elementy pasujące do tego selektora. */
+  margin: 0; /* odstęp na zewnątrz: 0. */
+  background: var(--bg); /* tło: var(--bg). */
+  color: var(--text); /* kolor tekstu: var(--text). */
+} /* Koniec tej reguły stylu lub warunku responsywnego. */
+.app { /* Reguła dla .app: ustawienia obowiązują elementy pasujące do tego selektora. */
+  max-width: 1480px; /* maksymalna szerokość: 1480px. */
+  margin: 20px auto; /* odstęp na zewnątrz: 20px auto. */
+  padding: 26px; /* odstęp wewnętrzny: 26px. */
+  background: var(--surface); /* tło: var(--surface). */
+  border: 1px solid var(--line); /* obramowanie: 1px solid var(--line). */
+  border-radius: 24px; /* zaokrąglenie rogów: 24px. */
+} /* Koniec tej reguły stylu lub warunku responsywnego. */
+header { /* Reguła dla header: ustawienia obowiązują elementy pasujące do tego selektora. */
+  display: flex; /* sposób układania elementów: flex. */
+  align-items: center; /* wyrównanie w osi poprzecznej: center. */
+  gap: 24px; /* odstęp między elementami układu: 24px. */
+  margin-bottom: 26px; /* Właściwość margin-bottom: 26px. */
+} /* Koniec tej reguły stylu lub warunku responsywnego. */
+.university { /* Reguła dla .university: ustawienia obowiązują elementy pasujące do tego selektora. */
+  width: 195px; /* szerokość: 195px. */
+  height: auto; /* wysokość: auto. */
+  mix-blend-mode: multiply; /* sposób łączenia kolorów obrazka z tłem: multiply. */
+} /* Koniec tej reguły stylu lub warunku responsywnego. */
+h1 { /* Reguła dla h1: ustawienia obowiązują elementy pasujące do tego selektora. */
+  font-size: clamp(21px, 2.2vw, 30px); /* rozmiar czcionki: clamp(21px, 2.2vw, 30px). */
+  line-height: 1.25; /* wysokość wiersza: 1.25. */
+  margin: 0 0 8px; /* odstęp na zewnątrz: 0 0 8px. */
+} /* Koniec tej reguły stylu lub warunku responsywnego. */
+header p { /* Reguła dla header p: ustawienia obowiązują elementy pasujące do tego selektora. */
+  margin: 0; /* odstęp na zewnątrz: 0. */
+  color: var(--muted); /* kolor tekstu: var(--muted). */
+} /* Koniec tej reguły stylu lub warunku responsywnego. */
+.heading { /* Reguła dla .heading: ustawienia obowiązują elementy pasujące do tego selektora. */
+  flex: 1; /* udział elementu w układzie elastycznym: 1. */
+} /* Koniec tej reguły stylu lub warunku responsywnego. */
+.code { /* Reguła dla .code: ustawienia obowiązują elementy pasujące do tego selektora. */
+  font-size: 14px; /* rozmiar czcionki: 14px. */
+  color: var(--muted); /* kolor tekstu: var(--muted). */
+  white-space: nowrap; /* obsługa białych znaków: nowrap. */
+} /* Koniec tej reguły stylu lub warunku responsywnego. */
+.columns { /* Reguła dla .columns: ustawienia obowiązują elementy pasujące do tego selektora. */
+  display: grid; /* sposób układania elementów: grid. */
+  grid-template-columns: 0.85fr 1.15fr; /* podział siatki na kolumny: 0.85fr 1.15fr. */
+  gap: 22px; /* odstęp między elementami układu: 22px. */
+  align-items: start; /* wyrównanie w osi poprzecznej: start. */
+} /* Koniec tej reguły stylu lub warunku responsywnego. */
+.card { /* Reguła dla .card: ustawienia obowiązują elementy pasujące do tego selektora. */
+  background: var(--card); /* tło: var(--card). */
+  border: 1px solid var(--line); /* obramowanie: 1px solid var(--line). */
+  border-radius: 17px; /* zaokrąglenie rogów: 17px. */
+  padding: 23px; /* odstęp wewnętrzny: 23px. */
+} /* Koniec tej reguły stylu lub warunku responsywnego. */
+.right { /* Reguła dla .right: ustawienia obowiązują elementy pasujące do tego selektora. */
+  display: grid; /* sposób układania elementów: grid. */
+  gap: 18px; /* odstęp między elementami układu: 18px. */
+} /* Koniec tej reguły stylu lub warunku responsywnego. */
+h2 { /* Reguła dla h2: ustawienia obowiązują elementy pasujące do tego selektora. */
+  font-size: 22px; /* rozmiar czcionki: 22px. */
+  margin: 0 0 16px; /* odstęp na zewnątrz: 0 0 16px. */
+  line-height: 1.3; /* wysokość wiersza: 1.3. */
+} /* Koniec tej reguły stylu lub warunku responsywnego. */
+h3 { /* Reguła dla h3: ustawienia obowiązują elementy pasujące do tego selektora. */
+  font-size: 16px; /* rozmiar czcionki: 16px. */
+  margin: 19px 0 8px; /* odstęp na zewnątrz: 19px 0 8px. */
+} /* Koniec tej reguły stylu lub warunku responsywnego. */
+p { /* Reguła dla p: ustawienia obowiązują elementy pasujące do tego selektora. */
+  margin: 8px 0 16px; /* odstęp na zewnątrz: 8px 0 16px. */
+} /* Koniec tej reguły stylu lub warunku responsywnego. */
+.muted, /* Reguła dla .muted,
+.small: ustawienia obowiązują elementy pasujące do tego selektora. */
+.small {
+  color: var(--muted); /* kolor tekstu: var(--muted). */
+} /* Koniec tej reguły stylu lub warunku responsywnego. */
+.small { /* Reguła dla .small: ustawienia obowiązują elementy pasujące do tego selektora. */
+  font-size: 13px; /* rozmiar czcionki: 13px. */
+} /* Koniec tej reguły stylu lub warunku responsywnego. */
+.manifest > h2 + .small { /* Reguła dla .manifest > h2 + .small: ustawienia obowiązują elementy pasujące do tego selektora. */
+  margin-top: -7px; /* Właściwość margin-top: -7px. */
+} /* Koniec tej reguły stylu lub warunku responsywnego. */
+fieldset { /* Reguła dla fieldset: ustawienia obowiązują elementy pasujące do tego selektora. */
+  padding: 0; /* odstęp wewnętrzny: 0. */
+  border: 0; /* obramowanie: 0. */
+  margin: 0; /* odstęp na zewnątrz: 0. */
+  min-width: 0; /* minimalna szerokość: 0. */
+} /* Koniec tej reguły stylu lub warunku responsywnego. */
+label { /* Reguła dla label: ustawienia obowiązują elementy pasujące do tego selektora. */
+  display: block; /* sposób układania elementów: block. */
+  margin: 13px 0 6px; /* odstęp na zewnątrz: 13px 0 6px. */
+  color: var(--text); /* kolor tekstu: var(--text). */
+} /* Koniec tej reguły stylu lub warunku responsywnego. */
+label span { /* Reguła dla label span: ustawienia obowiązują elementy pasujące do tego selektora. */
+  font-size: 12px; /* rozmiar czcionki: 12px. */
+} /* Koniec tej reguły stylu lub warunku responsywnego. */
+input, /* Reguła dla input,
+textarea,
+select,
+button: ustawienia obowiązują elementy pasujące do tego selektora. */
+textarea,
+select,
+button {
+  font: inherit; /* krój, rozmiar i wysokość wiersza: inherit. */
+  color: inherit; /* kolor tekstu: inherit. */
+  background: var(--card); /* tło: var(--card). */
+  border: 1px solid var(--line); /* obramowanie: 1px solid var(--line). */
+  border-radius: 9px; /* zaokrąglenie rogów: 9px. */
+} /* Koniec tej reguły stylu lub warunku responsywnego. */
+input:not([type="checkbox"]), /* Reguła dla input:not([type="checkbox"]),
+textarea: ustawienia obowiązują elementy pasujące do tego selektora. */
+textarea {
+  width: 100%; /* szerokość: 100%. */
+  padding: 9px 12px; /* odstęp wewnętrzny: 9px 12px. */
+} /* Koniec tej reguły stylu lub warunku responsywnego. */
+textarea { /* Reguła dla textarea: ustawienia obowiązują elementy pasujące do tego selektora. */
+  resize: vertical; /* dozwolona zmiana rozmiaru pola: vertical. */
+  min-height: 46px; /* Właściwość min-height: 46px. */
+} /* Koniec tej reguły stylu lub warunku responsywnego. */
+input[type="checkbox"] { /* Reguła dla input[type="checkbox"]: ustawienia obowiązują elementy pasujące do tego selektora. */
+  width: 19px; /* szerokość: 19px. */
+  height: 19px; /* wysokość: 19px. */
+  accent-color: var(--accent); /* kolor natywnych kontrolek: var(--accent). */
+} /* Koniec tej reguły stylu lub warunku responsywnego. */
+.checkbox { /* Reguła dla .checkbox: ustawienia obowiązują elementy pasujące do tego selektora. */
+  display: flex; /* sposób układania elementów: flex. */
+  align-items: center; /* wyrównanie w osi poprzecznej: center. */
+  gap: 10px; /* odstęp między elementami układu: 10px. */
+  font-size: 14px; /* rozmiar czcionki: 14px. */
+  margin: 19px 0; /* odstęp na zewnątrz: 19px 0. */
+} /* Koniec tej reguły stylu lub warunku responsywnego. */
+button { /* Reguła dla button: ustawienia obowiązują elementy pasujące do tego selektora. */
+  padding: 10px 14px; /* odstęp wewnętrzny: 10px 14px. */
+  cursor: pointer; /* kształt kursora: pointer. */
+  font-size: 14px; /* rozmiar czcionki: 14px. */
+  font-weight: 600; /* grubość czcionki: 600. */
+} /* Koniec tej reguły stylu lub warunku responsywnego. */
+button:not(:disabled):hover { /* Reguła dla button:not(:disabled):hover: ustawienia obowiązują elementy pasujące do tego selektora. */
+  background: var(--panel); /* tło: var(--panel). */
+  border-color: var(--accent); /* Właściwość border-color: var(--accent). */
+  color: var(--accent); /* kolor tekstu: var(--accent). */
+} /* Koniec tej reguły stylu lub warunku responsywnego. */
+button:disabled { /* Reguła dla button:disabled: ustawienia obowiązują elementy pasujące do tego selektora. */
+  background: var(--panel); /* tło: var(--panel). */
+  color: var(--muted); /* kolor tekstu: var(--muted). */
+  cursor: not-allowed; /* kształt kursora: not-allowed. */
+} /* Koniec tej reguły stylu lub warunku responsywnego. */
+button.primary { /* Reguła dla button.primary: ustawienia obowiązują elementy pasujące do tego selektora. */
+  background: var(--accent); /* tło: var(--accent). */
+  border-color: var(--accent); /* Właściwość border-color: var(--accent). */
+  color: var(--on-accent); /* kolor tekstu: var(--on-accent). */
+} /* Koniec tej reguły stylu lub warunku responsywnego. */
+button.primary:not(:disabled):hover { /* Reguła dla button.primary:not(:disabled):hover: ustawienia obowiązują elementy pasujące do tego selektora. */
+  background: var(--accent-hover); /* tło: var(--accent-hover). */
+  border-color: var(--accent-hover); /* Właściwość border-color: var(--accent-hover). */
+  color: var(--on-accent); /* kolor tekstu: var(--on-accent). */
+} /* Koniec tej reguły stylu lub warunku responsywnego. */
+.buttons { /* Reguła dla .buttons: ustawienia obowiązują elementy pasujące do tego selektora. */
+  display: flex; /* sposób układania elementów: flex. */
+  gap: 12px; /* odstęp między elementami układu: 12px. */
+  flex-wrap: wrap; /* przenoszenie elementów do nowego wiersza: wrap. */
+} /* Koniec tej reguły stylu lub warunku responsywnego. */
+.buttons > button { /* Reguła dla .buttons > button: ustawienia obowiązują elementy pasujące do tego selektora. */
+  flex: 1; /* udział elementu w układzie elastycznym: 1. */
+} /* Koniec tej reguły stylu lub warunku responsywnego. */
+.outside { /* Reguła dla .outside: ustawienia obowiązują elementy pasujące do tego selektora. */
+  margin-top: 12px; /* Właściwość margin-top: 12px. */
+} /* Koniec tej reguły stylu lub warunku responsywnego. */
+.setbar { /* Reguła dla .setbar: ustawienia obowiązują elementy pasujące do tego selektora. */
+  display: flex; /* sposób układania elementów: flex. */
+  gap: 12px; /* odstęp między elementami układu: 12px. */
+  align-items: center; /* wyrównanie w osi poprzecznej: center. */
+  margin: 0 0 18px; /* odstęp na zewnątrz: 0 0 18px. */
+  flex-wrap: wrap; /* przenoszenie elementów do nowego wiersza: wrap. */
+} /* Koniec tej reguły stylu lub warunku responsywnego. */
+.setbar label { /* Reguła dla .setbar label: ustawienia obowiązują elementy pasujące do tego selektora. */
+  margin: 0; /* odstęp na zewnątrz: 0. */
+  font-size: 13px; /* rozmiar czcionki: 13px. */
+} /* Koniec tej reguły stylu lub warunku responsywnego. */
+.setbar select { /* Reguła dla .setbar select: ustawienia obowiązują elementy pasujące do tego selektora. */
+  max-width: 360px; /* maksymalna szerokość: 360px. */
+  padding: 7px 12px; /* odstęp wewnętrzny: 7px 12px. */
+} /* Koniec tej reguły stylu lub warunku responsywnego. */
+.setbar span { /* Reguła dla .setbar span: ustawienia obowiązują elementy pasujące do tego selektora. */
+  font-size: 12px; /* rozmiar czcionki: 12px. */
+  color: var(--muted); /* kolor tekstu: var(--muted). */
+} /* Koniec tej reguły stylu lub warunku responsywnego. */
+.setbar button { /* Reguła dla .setbar button: ustawienia obowiązują elementy pasujące do tego selektora. */
+  margin-left: auto; /* Właściwość margin-left: auto. */
+} /* Koniec tej reguły stylu lub warunku responsywnego. */
+.metrics { /* Reguła dla .metrics: ustawienia obowiązują elementy pasujące do tego selektora. */
+  display: grid; /* sposób układania elementów: grid. */
+  grid-template-columns: 1fr 1fr; /* podział siatki na kolumny: 1fr 1fr. */
+  gap: 16px; /* odstęp między elementami układu: 16px. */
+} /* Koniec tej reguły stylu lub warunku responsywnego. */
+.metrics > div { /* Reguła dla .metrics > div: ustawienia obowiązują elementy pasujące do tego selektora. */
+  background: var(--panel); /* tło: var(--panel). */
+  border-radius: 12px; /* zaokrąglenie rogów: 12px. */
+  padding: 16px 20px; /* odstęp wewnętrzny: 16px 20px. */
+} /* Koniec tej reguły stylu lub warunku responsywnego. */
+.metrics span { /* Reguła dla .metrics span: ustawienia obowiązują elementy pasujące do tego selektora. */
+  display: block; /* sposób układania elementów: block. */
+  color: var(--muted); /* kolor tekstu: var(--muted). */
+} /* Koniec tej reguły stylu lub warunku responsywnego. */
+.metrics strong { /* Reguła dla .metrics strong: ustawienia obowiązują elementy pasujące do tego selektora. */
+  font-size: 38px; /* rozmiar czcionki: 38px. */
+  line-height: 1.3; /* wysokość wiersza: 1.3. */
+} /* Koniec tej reguły stylu lub warunku responsywnego. */
+progress { /* Reguła dla progress: ustawienia obowiązują elementy pasujące do tego selektora. */
+  display: block; /* sposób układania elementów: block. */
+  width: 100%; /* szerokość: 100%. */
+  height: 11px; /* wysokość: 11px. */
+  margin: 20px 0 10px; /* odstęp na zewnątrz: 20px 0 10px. */
+  border: 0; /* obramowanie: 0. */
+  border-radius: 20px; /* zaokrąglenie rogów: 20px. */
+  overflow: hidden; /* zachowanie nadmiarowej zawartości: hidden. */
+  background: var(--panel); /* tło: var(--panel). */
+} /* Koniec tej reguły stylu lub warunku responsywnego. */
+progress::-webkit-progress-bar { /* Reguła dla progress::-webkit-progress-bar: ustawienia obowiązują elementy pasujące do tego selektora. */
+  background: var(--panel); /* tło: var(--panel). */
+} /* Koniec tej reguły stylu lub warunku responsywnego. */
+progress::-webkit-progress-value { /* Reguła dla progress::-webkit-progress-value: ustawienia obowiązują elementy pasujące do tego selektora. */
+  background: var(--accent); /* tło: var(--accent). */
+  border-radius: 20px; /* zaokrąglenie rogów: 20px. */
+} /* Koniec tej reguły stylu lub warunku responsywnego. */
+progress::-moz-progress-bar { /* Reguła dla progress::-moz-progress-bar: ustawienia obowiązują elementy pasujące do tego selektora. */
+  background: var(--accent); /* tło: var(--accent). */
+} /* Koniec tej reguły stylu lub warunku responsywnego. */
+ul { /* Reguła dla ul: ustawienia obowiązują elementy pasujące do tego selektora. */
+  padding: 0; /* odstęp wewnętrzny: 0. */
+  list-style: none; /* Właściwość list-style: none. */
+} /* Koniec tej reguły stylu lub warunku responsywnego. */
+.issues { /* Reguła dla .issues: ustawienia obowiązują elementy pasujące do tego selektora. */
+  margin: 0; /* odstęp na zewnątrz: 0. */
+} /* Koniec tej reguły stylu lub warunku responsywnego. */
+.issues li { /* Reguła dla .issues li: ustawienia obowiązują elementy pasujące do tego selektora. */
+  display: flex; /* sposób układania elementów: flex. */
+  gap: 20px; /* odstęp między elementami układu: 20px. */
+  align-items: center; /* wyrównanie w osi poprzecznej: center. */
+  border-top: 1px solid var(--line); /* Właściwość border-top: 1px solid var(--line). */
+  padding: 14px 0; /* odstęp wewnętrzny: 14px 0. */
+  font-size: 14px; /* rozmiar czcionki: 14px. */
+} /* Koniec tej reguły stylu lub warunku responsywnego. */
+.badge { /* Reguła dla .badge: ustawienia obowiązują elementy pasujące do tego selektora. */
+  border-radius: 24px; /* zaokrąglenie rogów: 24px. */
+  display: inline-block; /* sposób układania elementów: inline-block. */
+  padding: 3px 10px; /* odstęp wewnętrzny: 3px 10px. */
+  min-width: 115px; /* minimalna szerokość: 115px. */
+  text-align: center; /* wyrównanie tekstu: center. */
+  font-size: 13px; /* rozmiar czcionki: 13px. */
+  flex-shrink: 0; /* możliwość zwężania elementu: 0. */
+} /* Koniec tej reguły stylu lub warunku responsywnego. */
+.error { /* Reguła dla .error: ustawienia obowiązują elementy pasujące do tego selektora. */
+  background: var(--error-bg); /* tło: var(--error-bg). */
+  color: var(--error); /* kolor tekstu: var(--error). */
+} /* Koniec tej reguły stylu lub warunku responsywnego. */
+.warning { /* Reguła dla .warning: ustawienia obowiązują elementy pasujące do tego selektora. */
+  background: var(--warning-bg); /* tło: var(--warning-bg). */
+  color: var(--warning); /* kolor tekstu: var(--warning). */
+} /* Koniec tej reguły stylu lub warunku responsywnego. */
+.pass { /* Reguła dla .pass: ustawienia obowiązują elementy pasujące do tego selektora. */
+  color: var(--success); /* kolor tekstu: var(--success). */
+} /* Koniec tej reguły stylu lub warunku responsywnego. */
+.error-text { /* Reguła dla .error-text: ustawienia obowiązują elementy pasujące do tego selektora. */
+  color: var(--error); /* kolor tekstu: var(--error). */
+  font-size: 14px; /* rozmiar czcionki: 14px. */
+} /* Koniec tej reguły stylu lub warunku responsywnego. */
+.notice { /* Reguła dla .notice: ustawienia obowiązują elementy pasujące do tego selektora. */
+  display: none; /* sposób układania elementów: none. */
+  padding: 14px 18px; /* odstęp wewnętrzny: 14px 18px. */
+  border: 1px solid var(--accent); /* obramowanie: 1px solid var(--accent). */
+  background: var(--panel); /* tło: var(--panel). */
+  border-radius: 10px; /* zaokrąglenie rogów: 10px. */
+  margin-bottom: 18px; /* Właściwość margin-bottom: 18px. */
+} /* Koniec tej reguły stylu lub warunku responsywnego. */
+.notice.visible { /* Reguła dla .notice.visible: ustawienia obowiązują elementy pasujące do tego selektora. */
+  display: block; /* sposób układania elementów: block. */
+} /* Koniec tej reguły stylu lub warunku responsywnego. */
+.notice.bad { /* Reguła dla .notice.bad: ustawienia obowiązują elementy pasujące do tego selektora. */
+  border-color: var(--error); /* Właściwość border-color: var(--error). */
+  background: var(--error-bg); /* tło: var(--error-bg). */
+  color: var(--error); /* kolor tekstu: var(--error). */
+} /* Koniec tej reguły stylu lub warunku responsywnego. */
+summary { /* Reguła dla summary: ustawienia obowiązują elementy pasujące do tego selektora. */
+  cursor: pointer; /* kształt kursora: pointer. */
+  font-size: 20px; /* rozmiar czcionki: 20px. */
+  font-weight: 650; /* grubość czcionki: 650. */
+} /* Koniec tej reguły stylu lub warunku responsywnego. */
+summary::marker { /* Reguła dla summary::marker: ustawienia obowiązują elementy pasujące do tego selektora. */
+  color: var(--accent); /* kolor tekstu: var(--accent). */
+} /* Koniec tej reguły stylu lub warunku responsywnego. */
+details > summary { /* Reguła dla details > summary: ustawienia obowiązują elementy pasujące do tego selektora. */
+  margin-bottom: 0; /* Właściwość margin-bottom: 0. */
+} /* Koniec tej reguły stylu lub warunku responsywnego. */
+details[open] > summary { /* Reguła dla details[open] > summary: ustawienia obowiązują elementy pasujące do tego selektora. */
+  margin-bottom: 16px; /* Właściwość margin-bottom: 16px. */
+} /* Koniec tej reguły stylu lub warunku responsywnego. */
+.rules { /* Reguła dla .rules: ustawienia obowiązują elementy pasujące do tego selektora. */
+  margin-top: 14px; /* Właściwość margin-top: 14px. */
+} /* Koniec tej reguły stylu lub warunku responsywnego. */
+.rules summary { /* Reguła dla .rules summary: ustawienia obowiązują elementy pasujące do tego selektora. */
+  font-size: 13px; /* rozmiar czcionki: 13px. */
+  color: var(--muted); /* kolor tekstu: var(--muted). */
+} /* Koniec tej reguły stylu lub warunku responsywnego. */
+#checks li { /* Reguła dla #checks li: ustawienia obowiązują elementy pasujące do tego selektora. */
+  font-size: 13px; /* rozmiar czcionki: 13px. */
+  padding: 5px 0; /* odstęp wewnętrzny: 5px 0. */
+} /* Koniec tej reguły stylu lub warunku responsywnego. */
+.card details:not(.rules) { /* Reguła dla .card details:not(.rules): ustawienia obowiązują elementy pasujące do tego selektora. */
+  margin-top: 16px; /* Właściwość margin-top: 16px. */
+} /* Koniec tej reguły stylu lub warunku responsywnego. */
+.card details:not(.rules) summary { /* Reguła dla .card details:not(.rules) summary: ustawienia obowiązują elementy pasujące do tego selektora. */
+  font-size: 14px; /* rozmiar czcionki: 14px. */
+} /* Koniec tej reguły stylu lub warunku responsywnego. */
+.table-scroll { /* Reguła dla .table-scroll: ustawienia obowiązują elementy pasujące do tego selektora. */
+  overflow: auto; /* zachowanie nadmiarowej zawartości: auto. */
+} /* Koniec tej reguły stylu lub warunku responsywnego. */
+table { /* Reguła dla table: ustawienia obowiązują elementy pasujące do tego selektora. */
+  width: 100%; /* szerokość: 100%. */
+  border-collapse: collapse; /* łączenie obramowań komórek tabeli: collapse. */
+  font-size: 13px; /* rozmiar czcionki: 13px. */
+  min-width: 330px; /* minimalna szerokość: 330px. */
+} /* Koniec tej reguły stylu lub warunku responsywnego. */
+th, /* Reguła dla th,
+td: ustawienia obowiązują elementy pasujące do tego selektora. */
+td {
+  text-align: left; /* wyrównanie tekstu: left. */
+  border-bottom: 1px solid var(--line); /* Właściwość border-bottom: 1px solid var(--line). */
+  padding: 8px; /* odstęp wewnętrzny: 8px. */
+  vertical-align: top; /* wyrównanie zawartości w pionie: top. */
+} /* Koniec tej reguły stylu lub warunku responsywnego. */
+th { /* Reguła dla th: ustawienia obowiązują elementy pasujące do tego selektora. */
+  color: var(--text); /* kolor tekstu: var(--text). */
+  background: var(--panel); /* tło: var(--panel). */
+} /* Koniec tej reguły stylu lub warunku responsywnego. */
+td:first-child, /* Reguła dla td:first-child,
+td:last-child: ustawienia obowiązują elementy pasujące do tego selektora. */
+td:last-child {
+  white-space: nowrap; /* obsługa białych znaków: nowrap. */
+} /* Koniec tej reguły stylu lub warunku responsywnego. */
+.scenarios button { /* Reguła dla .scenarios button: ustawienia obowiązują elementy pasujące do tego selektora. */
+  font-size: 12px; /* rozmiar czcionki: 12px. */
+} /* Koniec tej reguły stylu lub warunku responsywnego. */
+pre { /* Reguła dla pre: ustawienia obowiązują elementy pasujące do tego selektora. */
+  white-space: pre-wrap; /* obsługa białych znaków: pre-wrap. */
+  overflow-wrap: anywhere; /* łamanie długiego tekstu: anywhere. */
+  padding: 14px; /* odstęp wewnętrzny: 14px. */
+  background: var(--panel); /* tło: var(--panel). */
+  border-radius: 8px; /* zaokrąglenie rogów: 8px. */
+  font: 13px/1.6 ui-monospace, monospace; /* Czcionka o stałej szerokości do podglądu README. */
+} /* Koniec tej reguły stylu lub warunku responsywnego. */
+footer { /* Reguła dla footer: ustawienia obowiązują elementy pasujące do tego selektora. */
+  display: flex; /* sposób układania elementów: flex. */
+  align-items: center; /* wyrównanie w osi poprzecznej: center. */
+  justify-content: space-between; /* rozmieszczenie wzdłuż głównej osi: space-between. */
+  gap: 15px; /* odstęp między elementami układu: 15px. */
+  border-top: 1px solid var(--line); /* Właściwość border-top: 1px solid var(--line). */
+  margin-top: 24px; /* Właściwość margin-top: 24px. */
+  padding-top: 12px; /* Właściwość padding-top: 12px. */
+} /* Koniec tej reguły stylu lub warunku responsywnego. */
+footer p { /* Reguła dla footer p: ustawienia obowiązują elementy pasujące do tego selektora. */
+  font-size: 12px; /* rozmiar czcionki: 12px. */
+  color: var(--muted); /* kolor tekstu: var(--muted). */
+  margin: 0; /* odstęp na zewnątrz: 0. */
+} /* Koniec tej reguły stylu lub warunku responsywnego. */
+.cat { /* Reguła dla .cat: ustawienia obowiązują elementy pasujące do tego selektora. */
+  width: 35px; /* szerokość: 35px. */
+  height: 35px; /* wysokość: 35px. */
+  object-fit: contain; /* dopasowanie obrazka do ramki: contain. */
+  mix-blend-mode: multiply; /* sposób łączenia kolorów obrazka z tłem: multiply. */
+  filter: invert(1) contrast(1.4); /* filtr wyglądu obrazka: invert(1) contrast(1.4). */
+} /* Koniec tej reguły stylu lub warunku responsywnego. */
+:focus-visible { /* Reguła dla :focus-visible: ustawienia obowiązują elementy pasujące do tego selektora. */
+  outline: 3px solid var(--accent); /* obrys zaznaczenia klawiaturą: 3px solid var(--accent). */
+  outline-offset: 3px; /* odstęp obrysu od elementu: 3px. */
+} /* Koniec tej reguły stylu lub warunku responsywnego. */
+button:focus-visible { /* Reguła dla button:focus-visible: ustawienia obowiązują elementy pasujące do tego selektora. */
+  box-shadow: 0 0 0 2px var(--on-accent); /* cień albo dodatkowy obrys: 0 0 0 2px var(--on-accent). */
+} /* Koniec tej reguły stylu lub warunku responsywnego. */
+.sr-only { /* Reguła dla .sr-only: ustawienia obowiązują elementy pasujące do tego selektora. */
+  position: absolute; /* sposób pozycjonowania: absolute. */
+  width: 1px; /* szerokość: 1px. */
+  height: 1px; /* wysokość: 1px. */
+  padding: 0; /* odstęp wewnętrzny: 0. */
+  margin: -1px; /* odstęp na zewnątrz: -1px. */
+  overflow: hidden; /* zachowanie nadmiarowej zawartości: hidden. */
+  clip: rect(0, 0, 0, 0); /* przycięcie elementu ukrytego wizualnie: rect(0, 0, 0, 0). */
+  white-space: nowrap; /* obsługa białych znaków: nowrap. */
+  border: 0; /* obramowanie: 0. */
+} /* Koniec tej reguły stylu lub warunku responsywnego. */
+[hidden] { /* Reguła dla [hidden]: ustawienia obowiązują elementy pasujące do tego selektora. */
+  display: none !important; /* sposób układania elementów: none. */
+} /* Koniec tej reguły stylu lub warunku responsywnego. */
+@media (max-width: 850px) { /* Warunek responsywny (max-width: 850px): dostosowanie do szerokości ekranu. */
+  .app { /* Reguła dla .app: ustawienia obowiązują elementy pasujące do tego selektora. */
+    margin: 10px; /* odstęp na zewnątrz: 10px. */
+    padding: 18px; /* odstęp wewnętrzny: 18px. */
+  } /* Koniec tej reguły stylu lub warunku responsywnego. */
+  header { /* Reguła dla header: ustawienia obowiązują elementy pasujące do tego selektora. */
+    flex-wrap: wrap; /* przenoszenie elementów do nowego wiersza: wrap. */
+    gap: 16px; /* odstęp między elementami układu: 16px. */
+  } /* Koniec tej reguły stylu lub warunku responsywnego. */
+  .university { /* Reguła dla .university: ustawienia obowiązują elementy pasujące do tego selektora. */
+    width: 145px; /* szerokość: 145px. */
+  } /* Koniec tej reguły stylu lub warunku responsywnego. */
+  .code { /* Reguła dla .code: ustawienia obowiązują elementy pasujące do tego selektora. */
+    margin-left: auto; /* Właściwość margin-left: auto. */
+  } /* Koniec tej reguły stylu lub warunku responsywnego. */
+  .columns { /* Reguła dla .columns: ustawienia obowiązują elementy pasujące do tego selektora. */
+    grid-template-columns: 1fr; /* podział siatki na kolumny: 1fr. */
+  } /* Koniec tej reguły stylu lub warunku responsywnego. */
+  .heading { /* Reguła dla .heading: ustawienia obowiązują elementy pasujące do tego selektora. */
+    min-width: 220px; /* minimalna szerokość: 220px. */
+  } /* Koniec tej reguły stylu lub warunku responsywnego. */
+  .card { /* Reguła dla .card: ustawienia obowiązują elementy pasujące do tego selektora. */
+    padding: 18px; /* odstęp wewnętrzny: 18px. */
+  } /* Koniec tej reguły stylu lub warunku responsywnego. */
+  .setbar select { /* Reguła dla .setbar select: ustawienia obowiązują elementy pasujące do tego selektora. */
+    max-width: 100%; /* maksymalna szerokość: 100%. */
+  } /* Koniec tej reguły stylu lub warunku responsywnego. */
+} /* Koniec tej reguły stylu lub warunku responsywnego. */
+@media (max-width: 420px) { /* Warunek responsywny (max-width: 420px): dostosowanie do szerokości ekranu. */
+  .app { /* Reguła dla .app: ustawienia obowiązują elementy pasujące do tego selektora. */
+    padding: 12px; /* odstęp wewnętrzny: 12px. */
+  } /* Koniec tej reguły stylu lub warunku responsywnego. */
+  .metrics > div { /* Reguła dla .metrics > div: ustawienia obowiązują elementy pasujące do tego selektora. */
+    padding: 12px; /* odstęp wewnętrzny: 12px. */
+  } /* Koniec tej reguły stylu lub warunku responsywnego. */
+  .metrics strong { /* Reguła dla .metrics strong: ustawienia obowiązują elementy pasujące do tego selektora. */
+    font-size: 32px; /* rozmiar czcionki: 32px. */
+  } /* Koniec tej reguły stylu lub warunku responsywnego. */
+  .metrics span { /* Reguła dla .metrics span: ustawienia obowiązują elementy pasujące do tego selektora. */
+    font-size: 13px; /* rozmiar czcionki: 13px. */
+  } /* Koniec tej reguły stylu lub warunku responsywnego. */
+  .issues li { /* Reguła dla .issues li: ustawienia obowiązują elementy pasujące do tego selektora. */
+    gap: 10px; /* odstęp między elementami układu: 10px. */
+  } /* Koniec tej reguły stylu lub warunku responsywnego. */
+  .badge { /* Reguła dla .badge: ustawienia obowiązują elementy pasujące do tego selektora. */
+    min-width: 92px; /* minimalna szerokość: 92px. */
+  } /* Koniec tej reguły stylu lub warunku responsywnego. */
+  .setbar { /* Reguła dla .setbar: ustawienia obowiązują elementy pasujące do tego selektora. */
+    display: grid; /* sposób układania elementów: grid. */
+  } /* Koniec tej reguły stylu lub warunku responsywnego. */
+  .setbar button { /* Reguła dla .setbar button: ustawienia obowiązują elementy pasujące do tego selektora. */
+    margin-left: 0; /* Właściwość margin-left: 0. */
+  } /* Koniec tej reguły stylu lub warunku responsywnego. */
+  header .code { /* Reguła dla header .code: ustawienia obowiązują elementy pasujące do tego selektora. */
+    display: none; /* sposób układania elementów: none. */
+  } /* Koniec tej reguły stylu lub warunku responsywnego. */
+  .buttons { /* Reguła dla .buttons: ustawienia obowiązują elementy pasujące do tego selektora. */
+    gap: 8px; /* odstęp między elementami układu: 8px. */
+  } /* Koniec tej reguły stylu lub warunku responsywnego. */
+  .buttons button { /* Reguła dla .buttons button: ustawienia obowiązują elementy pasujące do tego selektora. */
+    padding: 9px; /* odstęp wewnętrzny: 9px. */
+    font-size: 12px; /* rozmiar czcionki: 12px. */
+  } /* Koniec tej reguły stylu lub warunku responsywnego. */
+  h1 { /* Reguła dla h1: ustawienia obowiązują elementy pasujące do tego selektora. */
+    font-size: 22px; /* rozmiar czcionki: 22px. */
+  } /* Koniec tej reguły stylu lub warunku responsywnego. */
+} /* Koniec tej reguły stylu lub warunku responsywnego. */
+/* Dzieci siatki mogą być węższe od tabeli; przewija się tabela, nie cała strona. */
+.columns > * { /* Reguła dla .columns > *: ustawienia obowiązują elementy pasujące do tego selektora. */
+  min-width: 0; /* minimalna szerokość: 0. */
+} /* Koniec tej reguły stylu lub warunku responsywnego. */
+.right > .card { /* Reguła dla .right > .card: ustawienia obowiązują elementy pasujące do tego selektora. */
+  min-width: 0; /* minimalna szerokość: 0. */
+} /* Koniec tej reguły stylu lub warunku responsywnego. */
+.table-scroll { /* Reguła dla .table-scroll: ustawienia obowiązują elementy pasujące do tego selektora. */
+  max-width: 100%; /* maksymalna szerokość: 100%. */
+} /* Koniec tej reguły stylu lub warunku responsywnego. */
+@media (max-width: 850px) { /* Warunek responsywny (max-width: 850px): dostosowanie do szerokości ekranu. */
+  .columns { /* Reguła dla .columns: ustawienia obowiązują elementy pasujące do tego selektora. */
+    grid-template-columns: minmax(0, 1fr); /* podział siatki na kolumny: minmax(0, 1fr). */
+  } /* Koniec tej reguły stylu lub warunku responsywnego. */
+} /* Koniec tej reguły stylu lub warunku responsywnego. */
+
+/* Akcenty i linki pozostają czytelne także bez rozpoznawania koloru. */
+a { /* Reguła dla a: ustawienia obowiązują elementy pasujące do tego selektora. */
+  color: var(--accent); /* kolor tekstu: var(--accent). */
+  text-decoration: underline; /* wyróżnienie linku: underline. */
+  text-underline-offset: 3px; /* odległość podkreślenia od tekstu: 3px. */
+} /* Koniec tej reguły stylu lub warunku responsywnego. */
+a:hover { /* Reguła dla a:hover: ustawienia obowiązują elementy pasujące do tego selektora. */
+  color: var(--accent-hover); /* kolor tekstu: var(--accent-hover). */
+  text-decoration-thickness: 2px; /* grubość podkreślenia: 2px. */
+} /* Koniec tej reguły stylu lub warunku responsywnego. */
+h1, /* Reguła dla h1,
+.metrics strong: ustawienia obowiązują elementy pasujące do tego selektora. */
+.metrics strong {
+  color: var(--accent); /* kolor tekstu: var(--accent). */
+} /* Koniec tej reguły stylu lub warunku responsywnego. */
+summary:hover { /* Reguła dla summary:hover: ustawienia obowiązują elementy pasujące do tego selektora. */
+  color: var(--accent); /* kolor tekstu: var(--accent). */
+} /* Koniec tej reguły stylu lub warunku responsywnego. */
+progress { /* Reguła dla progress: ustawienia obowiązują elementy pasujące do tego selektora. */
+  accent-color: var(--accent); /* kolor natywnych kontrolek: var(--accent). */
+} /* Koniec tej reguły stylu lub warunku responsywnego. */

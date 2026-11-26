@@ -1,0 +1,37 @@
+PROJEKT DO OBRONY — Deividas Dirma · ASD1-M2-12
+
+CO OTWORZYĆ?
+- Pełny opis projektu: README.md lub README.txt
+- Dokumentacja Word: DOKUMENTACJA.docx
+- Dokumentacja PDF: DOKUMENTACJA.pdf (10 stron)
+- Aktualny PowerPoint: 08-DOKUMENTACJA/PREZENTACJA-AKTUALNA.pptx
+- Podgląd prezentacji PDF: 08-DOKUMENTACJA/PREZENTACJA-AKTUALNA.pdf
+- Uruchom aplikację: 01-APLIKACJA/OTWORZ-APLIKACJE.html
+- Algorytmy i reguły: 02-KOD-APLIKACJI/01-reguly-algorytmy-i-dane.js
+- Formularz i przyciski: 02-KOD-APLIKACJI/02-formularz-przyciski-i-wyniki.js
+- Wygląd strony: 02-KOD-APLIKACJI/03-wyglad-strony.css
+- Nauka do obrony: 07-INSTRUKCJE/MAPA-KODU-I-ODPOWIEDZI.txt
+
+FOLDERY:
+01-APLIKACJA — strona startowa, struktura HTML z komentarzami.
+02-KOD-APLIKACJI — logika, algorytmy, formularz i wygląd; komentarze po polsku.
+03-OBRAZKI — logo uczelni i kot.
+04-PRZYKLADOWE-DANE — pliki JSON do importu; nazwy opisują scenariusze.
+05-TESTY — testy reguł, algorytmów, formularza i przycisków.
+06-NARZEDZIA — opcjonalny serwer lokalny i pomiary algorytmów.
+07-INSTRUKCJE — mapa kodu, numery linii i odpowiedzi do obrony.
+08-DOKUMENTACJA — prezentacja i źródła wymagań; dokumentacja Word/PDF jest w głównym folderze.
+09-WYNIKI-SPRAWDZEN — aktualne raporty testów i kontroli paczki.
+
+URUCHOMIENIE:
+Rozpakuj CAŁY folder. Otwórz stronę w 01-APLIKACJA.
+Nie przenoś samego pliku HTML: korzysta z sąsiednich folderów 02 i 03.
+Node.js 20+ jest potrzebny tylko do poniższych poleceń, nie do samej aplikacji.
+Z folderu, w którym jest package.json:
+  npm test            — uruchamia testy
+  npm run benchmark   — zapisuje porównania w 09-WYNIKI-SPRAWDZEN
+  npm start           — opcjonalny serwer http://127.0.0.1:8080
+Nie potrzeba npm install. package.json zachowuje standardową nazwę wymaganą przez npm.
+
+Komentarze przygotowano z pomocą AI. Oryginalna i poprzednia kopia projektu pozostają bez zmian.
+Przykład MojaGra nadal deklaruje plik index.html — to dane testowe, a nie nazwa uruchamiania tej aplikacji.

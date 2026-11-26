@@ -1,0 +1,6 @@
+DOKUMENTACJA.docx i DOKUMENTACJA.pdf są w głównym folderze projektu.
+Dokumentacja została opracowana według nowego wzoru: strona tytułowa, spis treści, wstęp, sześć rozdziałów, zakończenie, spis rysunków i bibliografia. PDF ma 10 stron.
+Spisy w Wordzie są automatyczne i klikalne (zwykle Ctrl+kliknięcie). Po zmianach treści lub ilustracji zaktualizuj pola: Ctrl+A, F9.
+Word deklaruje Times New Roman; lokalny PDF korzysta z zamiennika Liberation Serif i monospace w pseudokodzie.
+Prezentacja w 08-DOKUMENTACJA ma 10 slajdów, notatki, oprawę UwB i dodatkowe schematy. Link repozytorium jest na slajdzie 10.
+Aktualizacja dokumentacji nie zmienia kodu, danych, README ani prezentacji.

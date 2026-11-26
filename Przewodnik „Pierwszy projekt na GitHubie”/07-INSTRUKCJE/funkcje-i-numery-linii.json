@@ -1,0 +1,140 @@
+[
+  {
+    "file": "02-KOD-APLIKACJI/01-reguly-algorytmy-i-dane.js",
+    "name": "linearSearch",
+    "category": "ALGORYTM: WYSZUKIWANIE LINIOWE",
+    "line": 47
+  },
+  {
+    "file": "02-KOD-APLIKACJI/01-reguly-algorytmy-i-dane.js",
+    "name": "compareIssues",
+    "category": "PORÓWNYWANIE: KLUCZ SORTOWANIA",
+    "line": 59
+  },
+  {
+    "file": "02-KOD-APLIKACJI/01-reguly-algorytmy-i-dane.js",
+    "name": "insertionSort",
+    "category": "ALGORYTM: SORTOWANIE PRZEZ WSTAWIANIE",
+    "line": 68
+  },
+  {
+    "file": "02-KOD-APLIKACJI/01-reguly-algorytmy-i-dane.js",
+    "name": "validateEnvelope",
+    "category": "WALIDACJA: STRUKTURA I GRANICE DANYCH",
+    "line": 101
+  },
+  {
+    "file": "02-KOD-APLIKACJI/01-reguly-algorytmy-i-dane.js",
+    "name": "parseJSON",
+    "category": "IMPORT: TEKST JSON NA DANE",
+    "line": 155
+  },
+  {
+    "file": "02-KOD-APLIKACJI/01-reguly-algorytmy-i-dane.js",
+    "name": "checkJSONSize",
+    "category": "LIMIT: BAJTY UTF-8",
+    "line": 169
+  },
+  {
+    "file": "02-KOD-APLIKACJI/01-reguly-algorytmy-i-dane.js",
+    "name": "serializeJSON",
+    "category": "EKSPORT: DANE NA TEKST JSON",
+    "line": 176
+  },
+  {
+    "file": "02-KOD-APLIKACJI/01-reguly-algorytmy-i-dane.js",
+    "name": "checkProject",
+    "category": "REGUŁY: KONTROLA PROJEKTU",
+    "line": 184
+  },
+  {
+    "file": "02-KOD-APLIKACJI/01-reguly-algorytmy-i-dane.js",
+    "name": "makeReadme",
+    "category": "GENEROWANIE: README",
+    "line": 220
+  },
+  {
+    "file": "02-KOD-APLIKACJI/01-reguly-algorytmy-i-dane.js",
+    "name": "makeReport",
+    "category": "GENEROWANIE: RAPORT",
+    "line": 227
+  },
+  {
+    "file": "02-KOD-APLIKACJI/01-reguly-algorytmy-i-dane.js",
+    "name": "benchmark",
+    "category": "POMIARY: PORÓWNANIE ZE WZORCEM",
+    "line": 238
+  },
+  {
+    "file": "02-KOD-APLIKACJI/01-reguly-algorytmy-i-dane.js",
+    "name": "scenarios",
+    "category": "DANE: SCENARIUSZE DO POKAZU",
+    "line": 270
+  },
+  {
+    "file": "02-KOD-APLIKACJI/02-formularz-przyciski-i-wyniki.js",
+    "name": "notice",
+    "category": "INTERFEJS: KOMUNIKATY",
+    "line": 24
+  },
+  {
+    "file": "02-KOD-APLIKACJI/02-formularz-przyciski-i-wyniki.js",
+    "name": "readDraft",
+    "category": "FORMULARZ: ODCZYT SZKICU",
+    "line": 31
+  },
+  {
+    "file": "02-KOD-APLIKACJI/02-formularz-przyciski-i-wyniki.js",
+    "name": "renderOptions",
+    "category": "INTERFEJS: LISTA PROJEKTÓW",
+    "line": 46
+  },
+  {
+    "file": "02-KOD-APLIKACJI/02-formularz-przyciski-i-wyniki.js",
+    "name": "renderEmpty",
+    "category": "INTERFEJS: PUSTY ZESTAW",
+    "line": 65
+  },
+  {
+    "file": "02-KOD-APLIKACJI/02-formularz-przyciski-i-wyniki.js",
+    "name": "showProject",
+    "category": "INTERFEJS: WYBRANY PROJEKT",
+    "line": 81
+  },
+  {
+    "file": "02-KOD-APLIKACJI/02-formularz-przyciski-i-wyniki.js",
+    "name": "renderResult",
+    "category": "INTERFEJS: PREZENTACJA WYNIKU",
+    "line": 106
+  },
+  {
+    "file": "02-KOD-APLIKACJI/02-formularz-przyciski-i-wyniki.js",
+    "name": "checkAndCommit",
+    "category": "ZATWIERDZANIE: NAJPIERW SPRAWDZENIE",
+    "line": 156
+  },
+  {
+    "file": "02-KOD-APLIKACJI/02-formularz-przyciski-i-wyniki.js",
+    "name": "download",
+    "category": "PLIKI: POBIERANIE",
+    "line": 180
+  },
+  {
+    "file": "02-KOD-APLIKACJI/02-formularz-przyciski-i-wyniki.js",
+    "name": "replaceAll",
+    "category": "IMPORT: WYMIANA CAŁEGO ZESTAWU",
+    "line": 194
+  },
+  {
+    "file": "02-KOD-APLIKACJI/02-formularz-przyciski-i-wyniki.js",
+    "name": "addTable",
+    "category": "INTERFEJS: TABELA POMIARÓW",
+    "line": 292
+  },
+  {
+    "file": "05-TESTY/testy-formularza-i-przyciskow.test.cjs",
+    "name": "app",
+    "category": "TESTY INTERFEJSU: ADAPTER DOM",
+    "line": 16
+  }
+]

@@ -1,0 +1,17 @@
+{
+  "pages": 10,
+  "toc_entries": 10,
+  "docx_internal_links_resolved": 12,
+  "figures": 2,
+  "pdf_bibliography_links": 6,
+  "pdf_figure_links": 2,
+  "author": "Deividas Dirma",
+  "code_readme_data_presentation": "unchanged",
+  "tests": "Not rerun: report-only change; documented results from 24.11.2026",
+  "baseline_changes": [
+    "DOKUMENTACJA.pdf",
+    "DOKUMENTACJA.docx",
+    "08-DOKUMENTACJA/CZYTAJ-NAJPIERW.txt",
+    "07-INSTRUKCJE/SPRAWOZDANIE-I-PREZENTACJA.txt"
+  ]
+}

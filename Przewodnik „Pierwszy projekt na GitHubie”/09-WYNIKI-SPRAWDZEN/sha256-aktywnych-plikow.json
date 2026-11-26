@@ -1,0 +1,10 @@
+{
+  "01-APLIKACJA/OTWORZ-APLIKACJE.html": "412814dadd19afd435120c369c9a9d38635f9919126b37beebc30e1630c34c06",
+  "02-KOD-APLIKACJI/01-reguly-algorytmy-i-dane.js": "700164a1f468f8509d7f5c4a06e8f5e7b21b21eb43f20beaed7d44df4a0f2618",
+  "02-KOD-APLIKACJI/02-formularz-przyciski-i-wyniki.js": "e7a0e3bb537cde2f1e5429168a18b9f51714eec2698aa23dcf961f16c047598f",
+  "02-KOD-APLIKACJI/03-wyglad-strony.css": "6117bc31addc9e1626b1df5edbdb6852353bf13cacf5c92b0df613b457e9a337",
+  "05-TESTY/testy-regul-i-algorytmow.test.cjs": "4b56823f8c49d25a7ac0dbfe1e0ec64cfa7dc31443f0eff7700fa4186534d764",
+  "05-TESTY/testy-formularza-i-przyciskow.test.cjs": "63b869b6fa4e071df6717ad28d0316085ebc00af1797a4bc4b05bb0e73cd3f8b",
+  "06-NARZEDZIA/serwer-lokalny.cjs": "e32fef68b82db273603c9fc6275b9164480a8f917c2362d92f8949258153d71b",
+  "06-NARZEDZIA/pomiary-algorytmow.cjs": "1041808505a040a121b12e2dce891aac55164a7ec76a045a3af404a987cbe0c0"
+}
